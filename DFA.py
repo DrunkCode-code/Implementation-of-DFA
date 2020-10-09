@@ -72,20 +72,21 @@ print('Program Pengecekan 5 Bahasa (DFA)')
 # Menu
 exit = True
 while (exit):
-    print('Menu :')
-    print('1. L1 = Himpunan semua string yang mengandung substring 101')
-    print('2. L2 = Himpunan semua string yang mengandung prefiks 101')
-    print('3. L3 = Himpunan semua string yang mengandung sufiks 101')
-    print('4. L4 = Himpunan semua string yang mengandung jumlah simbol 0 genap')
-    print('5. L5 = Himpunan semua string yang mengandung jumlah simbol 1 ganjil')
-    try:
-        pil = int(input('Masukan Pilihan Menu : '))
-        if 0 < pil < 6:
-            break
-        else:
+    while (True):
+        print('Menu :')
+        print('1. L1 = Himpunan semua string yang mengandung substring 101')
+        print('2. L2 = Himpunan semua string yang mengandung prefiks 101')
+        print('3. L3 = Himpunan semua string yang mengandung sufiks 101')
+        print('4. L4 = Himpunan semua string yang mengandung jumlah simbol 0 genap')
+        print('5. L5 = Himpunan semua string yang mengandung jumlah simbol 1 ganjil')
+        try:
+            pil = int(input('Masukan Pilihan Menu : '))
+            if 0 < pil < 6:
+                break
+            else:
+                print("Pilihan Menu Tidak Tersedia")
+        except:
             print("Pilihan Menu Tidak Tersedia")
-    except:
-        print("Pilihan Menu Tidak Tersedia")
 
     # input
     str = input('Enter a String : ')
@@ -104,4 +105,3 @@ while (exit):
             break
         else:
             print('Pilihan Tidak Tersedia, Pilihan Tersedia Hanya Y atau N')
-
