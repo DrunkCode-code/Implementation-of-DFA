@@ -25,16 +25,16 @@ def valid(pil, string):
     if pil == 1:
         validasi = 'Diterima' if deltatopi(deltaL1, 'q0', {'q3'}, string) else 'Ditolak'
         print('\n' + string, '->', validasi)
-    if pil == 2:
+    elif pil == 2:
         validasi = 'Diterima' if deltatopi(deltaL2, 'q0', {'q3'}, string) else 'Ditolak'
         print('\n' + string, '->', validasi)
-    if pil == 3:
+    elif pil == 3:
         validasi = 'Diterima' if deltatopi(deltaL3, 'q0', {'q3'}, string) else 'Ditolak'
         print('\n' + string, '->', validasi)
-    if pil == 4:
+    elif pil == 4:
         validasi = 'Diterima' if deltatopi(deltaL4, 'q0', {'q0'}, string) else 'Ditolak'
         print('\n' + string, '->', validasi)
-    if pil == 5:
+    elif pil == 5:
         validasi = 'Diterima' if deltatopi(deltaL5, 'q0', {'q1'}, string) else 'Ditolak'
         print('\n' + string, '->', validasi)
 
