@@ -70,7 +70,8 @@ def deltatopi(transisi,initial,finalstate,s):
 print('Program Pengecekan 5 Bahasa (DFA)')
 
 # Menu
-while (True):
+exit = True
+while (exit):
     print('Menu :')
     print('1. L1 = Himpunan semua string yang mengandung substring 101')
     print('2. L2 = Himpunan semua string yang mengandung prefiks 101')
@@ -86,8 +87,6 @@ while (True):
     except:
         print("Pilihan Menu Tidak Tersedia")
 
-exit = True
-while (exit):
     # input
     str = input('Enter a String : ')
     for char in str:
